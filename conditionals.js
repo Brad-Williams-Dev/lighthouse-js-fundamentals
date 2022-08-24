@@ -1,40 +1,26 @@
-const raining = false;
-const cold = false;
+let count = 60;
 
-if (raining) {
-  console.log("Don't forget your umbrella!");
-}
+while (count >= 0) {
+  if (count === 50) {
+    console.log("T-" + count + " seconds");
+    console.log("Orbiter transfers from ground to internal power")
+  } else if (count === 31) {
+    console.log("T-" + count + " seconds");
+    console.log("Ground launch sequencer is go for auto sequence start")
+  } else if (count === 16) {
+    console.log("T-" + count + " seconds");
+    console.log("Activate launch pad sound suppression system")
+  } else if (count === 10) {
+    console.log("T-" + count + " seconds");
+    console.log("Activate main engine hydrogen burnoff system")
+  } else if (count === 6) {
+    console.log("T-" + count + " seconds");
+    console.log("Main engine start");
+  } else if (count === 0) {
+    console.log("T-" + count + " seconds");
+    console.log("Solid rocket booster ignition and liftoff!");
+  } else {
+    console.log("T-" + count + " seconds");
+  }
 
-if (cold) {
-  console.log("Make sure you pick out a scarf!");
-}
-
-console.log("Now you're ready to go outside!");
-
-const temperature = -12;
-
-if (temperature < 0) {
-  console.log("Make sure you pick out a scarf!");
-} else if (temperature < 15) {
-  console.log("Short sleeves won't cut it!");
-} else {
-  console.log("Short sleeves are fine.");
-}
-
-console.log("Now you're ready to go outside!");
-
-const isCitizen = true;
-const age = 26;
-
-if (isCitizen && age > 18) {
-  console.log("You are eligible to vote.");
-}
-
-if (temperature < -40 || temperature > 40) {
-  console.log("Maybe going outside isn't such a great idea…");
-}
-
-
-if (!raining) {
-  console.log("Leave your umbrella at home!");
 }
